@@ -1,0 +1,158 @@
+:host {
+  all: initial;
+}
+
+.bubble {
+  position: fixed;
+  z-index: 2147483647;
+  width: 320px;
+  padding: 12px 14px;
+  border: 1px solid #e3e5ee;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.18);
+  color: #14161f;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: left;
+  user-select: none;
+}
+
+.bubble__iframe-wrap {
+  margin-top: 10px;
+  overflow: hidden;
+  border: 1px solid #e3e5ee;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.bubble__iframe {
+  display: block;
+  border: 0;
+  transform-origin: top left;
+}
+
+.bubble__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.bubble__title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4f46e5;
+  letter-spacing: 0.02em;
+}
+
+.bubble__close {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #69707f;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.bubble__close:hover {
+  background: #f0f1f7;
+}
+
+.bubble__source {
+  margin: 0 0 8px;
+  max-height: 84px;
+  overflow: auto;
+  color: #69707f;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.bubble__result {
+  margin: 0;
+  color: #14161f;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.bubble__status {
+  margin: 0;
+  color: #69707f;
+}
+
+.bubble__error {
+  margin: 0;
+  color: #dc2626;
+}
+
+.bubble__action {
+  margin-top: 8px;
+  padding: 6px 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.bubble__action:hover {
+  background: #4338ca;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bubble {
+    border-color: #2b2f3a;
+    background: #1a1d25;
+    color: #e8eaf0;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.55);
+  }
+
+  .bubble__title {
+    color: #a5b4fc;
+  }
+
+  .bubble__iframe-wrap {
+    border-color: #2b2f3a;
+    background: #1a1d25;
+  }
+
+  .bubble__close {
+    color: #9aa3b2;
+  }
+
+  .bubble__close:hover {
+    background: #232733;
+  }
+
+  .bubble__source,
+  .bubble__status {
+    color: #9aa3b2;
+  }
+
+  .bubble__result {
+    color: #e8eaf0;
+  }
+
+  .bubble__error {
+    color: #f87171;
+  }
+
+  .bubble__action {
+    background: #818cf8;
+    color: #111318;
+  }
+
+  .bubble__action:hover {
+    background: #a5b4fc;
+  }
+}

@@ -1,0 +1,27 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.options {
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  max-width: 560px;
+}
+
+.options__title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.options__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+}
